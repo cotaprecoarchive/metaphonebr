@@ -97,7 +97,7 @@ PHP_FUNCTION(metaphone_ptbr)
     // php_printf("DEBUG: %s (%d)\n", result, mblength);
 
 	META_FREE(stringUCS);
-    RETURN_STRINGL(result, MAX_METAPHONE_LENGTH, 0);
+    RETURN_STRINGL(result, mbstowcs(NULL, result, 0), 0);
 }
 /* }}} */
 
