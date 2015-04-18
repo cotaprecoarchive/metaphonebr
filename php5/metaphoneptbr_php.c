@@ -3,10 +3,9 @@
 #endif
 
 #include "php.h"
-#include "php_ini.h"
-#include "ext/standard/info.h"
-#include "metaphoneptbr_php.h"
 #include <locale.h>
+#include "metaphoneptbr_php.h"
+#include "../source/metaphone_ptbr.c"
 
 /* {{{ doublemetaphone_functions[]
  * */
@@ -19,14 +18,14 @@ zend_function_entry metaphoneptbr_functions[] = {
 /* {{{ stem_module_entry */
 zend_module_entry metaphoneptbr_module_entry = {
 	STANDARD_MODULE_HEADER,
-    "metaphoneptbr",
+    PHP_METAPHONEPTBR_EXTNAME,
     metaphoneptbr_functions,
     NULL, //PHP_MINIT(metaphone_ptbr),
     NULL, //PHP_MSHUTDOWN(metaphone_ptbr),
     NULL,
     NULL,
     NULL, //PHP_MINFO(metaphone_ptbr),
-    "1.0",
+    PHP_METAPHONEPTBR_VERSION,
     STANDARD_MODULE_PROPERTIES
 };
 /* }}} */
@@ -100,5 +99,3 @@ PHP_FUNCTION(metaphone_ptbr)
     RETURN_STRINGL(result, mbstowcs(NULL, result, 0), 0);
 }
 /* }}} */
-
-#include "../source/metaphone_ptbr.c"
