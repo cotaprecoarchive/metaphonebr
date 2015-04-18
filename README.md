@@ -1,3 +1,10 @@
+## metaphoneptbr
+Mirrored/forked from:
+
+> https://code.launchpad.net/~carlosjordao/metaphoneptbr/trunk
+
+:beers:
+
 ## Introdução
 
 O metafone é um algoritmo de transformação de texto baseado em regras
