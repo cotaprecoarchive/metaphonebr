@@ -131,8 +131,6 @@ complicadas de se tratar e que sempre vão precisar de um cuidado mais apurado o
 a fim de representá-los, mesmo que não soem como o esperado na representação fonética, mas que possam
 ser enquadrados ao lado de nomes semelhantes em grafia para a busca se tornar efetiva.
 
-
-
 # O futuro
 
 Dado as principais dificuldades fonéticas práticas, encontramos três frentes de trabalho:
@@ -155,6 +153,6 @@ restritiva, pois diminuiria o número de casos semelhantes. Para o último, seri
 apenas a sonoridade mais marcante da palavra e teria um número de casos semelhantes muito mais alto.
 
 
-# License
+# Copyright
 &copy; 2008 &mdash; Carlos Costa Jordão `carlosjordao@gmail.com`, <br />
 Todos os direitos reservados.
